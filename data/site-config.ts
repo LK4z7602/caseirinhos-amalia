@@ -10,13 +10,13 @@ export const siteConfig = {
   // Informações de contato
   contact: {
     whatsapp: "+55 12 99775-6182", // Formato: +55 00 00000-0000
-    // email: "contato@caseirinhosdaamalia.com.br",
+    // instagram: "@caseirinhosdaamalia",
     // address: "Rua dos Bolos, 123 - Cidade",
   },
 
   // Redes sociais (adicione ou remova conforme necessário)
   socialMedia: {
-    instagram: "https://instagram.com/caseirinhosdaamalia",
+    instagram: "https://instagram.com/caseirinhos_da_amalia",
     facebook: "https://www.facebook.com/caseirinhosdaamalia/mentions/?_rdr",
   },
 

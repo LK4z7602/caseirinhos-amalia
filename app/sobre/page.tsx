@@ -83,8 +83,7 @@ height={40}
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter text-purple-900">Nossa História</h2>
                   <p className="text-gray-600">
-                    Tudo começou com uma paixão pela confeitaria e o desejo de levar sabores caseiros e autênticos para
-                    as pessoas. Fundada em 2015, a Caseirinhos da Amália nasceu na cozinha de casa, com receitas de
+                    Tudo começou na pandemia, visando que ninguém podia sair de casa para ir em uma padaria ou supermercado comprar seus pães e bolos. Descobri minha paixão em fazer bolos fresquinhos caseiros. Fundada em 2020, a Caseirinhos da Amália nasceu na cozinha de casa, com receitas de
                     família passadas de geração em geração.
                   </p>
                   <p className="text-gray-600">
@@ -94,7 +93,7 @@ height={40}
                   </p>
                   <p className="text-gray-600">
                     Hoje, continuamos com a mesma dedicação e amor pela confeitaria, trazendo para você bolos caseiros e
-                    cake donuts sempre fresquinhos, direto da nossa casa para a sua casa!
+                    cake donuts sempre fresquinhos, direto da minha casa para a sua casa!
                   </p>
                 </div>
               </div>
@@ -281,6 +280,7 @@ height={40}
             <div className="space-y-4">
               <h3 className="text-lg font-medium text-purple-900">Contato</h3>
               <div className="flex flex-col gap-2 text-sm text-gray-500">
+                
                 <p>WhatsApp: {siteConfig.contact.whatsapp}</p>
               </div>
             </div>
