@@ -325,7 +325,7 @@ height={40}
                               >
                                 <div className="flex items-center space-x-2">
                                   <RadioGroupItem value="delivery" id={`delivery-${item.id}`} />
-                                  <Label htmlFor={`delivery-${item.id}`}>Entrega</Label>
+                                  <Label htmlFor={`delivery-${item.id}`}>Entrega (Frete à Cobrar)</Label>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                   <RadioGroupItem value="pickup" id={`pickup-${item.id}`} />
