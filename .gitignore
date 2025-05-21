@@ -5,6 +5,10 @@
 
 # next.js
 /.next/
+<<<<<<< HEAD
+=======
+
+>>>>>>> c886433f1d8ebc4ed3f3ea3b8883b177ef467716
 
 # production
 /build
