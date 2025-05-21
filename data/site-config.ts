@@ -22,8 +22,8 @@ export const siteConfig = {
 
   // Configurações de promoções
   promotions: {
-    enableCoupons: false,
-    validCoupons: [""], // Lista de cupons válidos
+    enableCoupons: true,
+    validCoupons: ["CASEIRINHOS10"] // Lista de cupons válidos
   },
 }
 

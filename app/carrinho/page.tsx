@@ -73,9 +73,9 @@ export default function CartPage() {
   }
 
   const applyCoupon = () => {
-    if (couponCode.toUpperCase() === "ANIVERSARIO15") {
-      setDiscount(0.15)
-      alert("Cupom aplicado com sucesso! 15% de desconto.")
+    if (couponCode.toUpperCase() === "CASEIRINHOS10") {
+      setDiscount(0.10)
+      alert("Cupom aplicado com sucesso! 10% de desconto.")
     } else {
       setDiscount(0)
       alert("Cupom inválido ou expirado.")
