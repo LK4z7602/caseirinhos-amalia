@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { FeaturedCakes } from "@/components/featured-cakes"
 import { TestimonialSection } from "@/components/testimonial-section"
 import { siteConfig } from "@/data/site-config"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   const [cartItems, setCartItems] = useState<any[]>([])
