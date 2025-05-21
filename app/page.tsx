@@ -104,7 +104,7 @@ height={40}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter text-purple-900 sm:text-4xl md:text-5xl">
-                    Bolos Caseiros com Amor e Carinho
+                    Bolos Caseiros com <br></br>Amor e Carinho
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     {siteConfig.slogan}
@@ -127,7 +127,7 @@ height={40}
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/AmaliaCaseirinhos.png"
+                  src="/AmaliaCaseirinhos1.jpg"
                   alt="Bolo Caseiro"
                   width={400}
                   height={400}

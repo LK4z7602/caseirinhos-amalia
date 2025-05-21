@@ -12,7 +12,7 @@ import { ProductCard } from "@/components/product-card"
 const CAROUSEL_SPEED = 5
 
 // Get featured products (only available products)
-const featuredProducts = products.filter((product) => product.available).slice(0, 18) // numero de produtos que aparecerão
+const featuredProducts = products.filter((product) => product.available).slice(0, 16) // numero de produtos que aparecerão
 
 export function FeaturedCakes() {
   const [currentIndex, setCurrentIndex] = useState(0)

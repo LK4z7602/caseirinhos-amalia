@@ -102,7 +102,7 @@ height={40}
                   <div className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-purple-200 md:-left-6 md:-top-6 md:h-32 md:w-32"></div>
                   <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-pink-200 md:-bottom-6 md:-right-6 md:h-32 md:w-32"></div>
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/RostoAmalia.jpg?height=400&width=400"
                     alt="Nossa História"
                     width={400}
                     height={400}
@@ -202,8 +202,8 @@ height={40}
             <div className="grid gap-12 md:grid-cols-2 md:gap-16">
               <div className="order-2 md:order-1 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Nosso Processo"
+                  src="/espatula-bolo.jpg?height=400&width=400"
+                  alt="Imagem Meramente Ilustrativa"
                   width={400}
                   height={400}
                   className="rounded-lg object-cover"
