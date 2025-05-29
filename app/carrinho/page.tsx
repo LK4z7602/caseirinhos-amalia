@@ -98,16 +98,15 @@ export default function CartPage() {
 
         return `*${item.quantity}x ${item.name}*
 *Tamanho:* ${item.size}
-*Opção:* ${deliveryText}${
-          item.observations
+*Opção:* ${deliveryText}${item.observations
             ? `
 *Observações:* ${item.observations}`
             : ""
-        }
+          }
 *Valor:* ${(item.price * item.quantity).toLocaleString("pt-BR", {
-          style: "currency",
-          currency: "BRL",
-        })}`
+            style: "currency",
+            currency: "BRL",
+          })}`
       })
       .join("\n\n")
 
@@ -116,30 +115,28 @@ export default function CartPage() {
 
 ${itemsList}
 
-${
-  discount > 0
-    ? `*Subtotal:* ${subtotal.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL",
-      })}
+${discount > 0
+        ? `*Subtotal:* ${subtotal.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })}
 *Desconto:* ${discountAmount.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL",
-      })}
+          style: "currency",
+          currency: "BRL",
+        })}
 `
-    : ""
-}*Valor Total:* ${total.toLocaleString("pt-BR", {
+        : ""
+      }*Valor Total:* ${total.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",
       })}
 
-${
-  observations
-    ? `*Observações Gerais:* ${observations}
+${observations
+        ? `*Observações Gerais:* ${observations}
 
 `
-    : ""
-}Poderia me informar sobre as opções de pagamento?`,
+        : ""
+      }Poderia me informar sobre as opções de pagamento?`,
     )
 
     // Clear cart after checkout
@@ -162,13 +159,13 @@ ${
       <header className="sticky top-0 z-50 w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
-            <Image 
-src={siteConfig.logo || "/LogoBolo.jpg"}
- alt={siteConfig.name} 
-width={40} 
-height={40} 
-  style={{ borderRadius: '10px' }} 
-/>
+            <Image
+              src={siteConfig.logo || "/LogoBolo.jpg"}
+              alt={siteConfig.name}
+              width={40}
+              height={40}
+              style={{ borderRadius: '10px' }}
+            />
             <span className="text-xl font-semibold text-purple-800">{siteConfig.name}</span>
           </Link>
           <div className="flex items-center gap-6">
@@ -337,7 +334,8 @@ height={40}
                             <div className="space-y-1">
                               <label className="text-sm font-medium text-gray-700">Observações (opcional)</label>
                               <Textarea
-                                placeholder="Alguma observação especial para este item?"
+                                placeholder="Deixe sua observação adicional aqui!"
+
                                 value={item.observations}
                                 onChange={(e) => updateItemObservations(item.id, e.target.value)}
                                 className="min-h-[60px] border-purple-200 text-sm"
@@ -353,11 +351,15 @@ height={40}
                 <div className="mt-6 rounded-lg border p-6">
                   <h2 className="mb-4 text-lg font-medium text-purple-900">Observações Gerais</h2>
                   <Textarea
-                    placeholder="Alguma observação adicional para o seu pedido?"
+                    placeholder="Tem algo mais a dizer? Fale agora!"
                     value={observations}
                     onChange={(e) => setObservations(e.target.value)}
                     className="min-h-[100px] border-purple-200"
                   />
+                  <span
+                    className="my-2 text-center text-base font-normal text-pink-600 block">
+                    Nossos produtos são sempre fresquinhos e feitos sob encomenda. Entre em contato com 1 dia de antecedência!
+                  </span>
                 </div>
               </div>
               <div>
@@ -370,6 +372,7 @@ height={40}
                         <span className="font-medium text-purple-900">
                           {subtotal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}
                         </span>
+
                       </div>
                       {discount > 0 && (
                         <div className="flex justify-between text-green-600">
@@ -440,13 +443,13 @@ height={40}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-2">
-                <Image 
-src={siteConfig.logo || "/LogoBolo.jpg"}
- alt={siteConfig.name} 
-width={40} 
-height={40} 
-  style={{ borderRadius: '10px' }} 
-/>
+                <Image
+                  src={siteConfig.logo || "/LogoBolo.jpg"}
+                  alt={siteConfig.name}
+                  width={40}
+                  height={40}
+                  style={{ borderRadius: '10px' }}
+                />
                 <span className="text-xl font-semibold text-purple-800">{siteConfig.name}</span>
               </Link>
               <p className="text-sm text-gray-500">
