@@ -125,7 +125,7 @@ export default function CustomizePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/placeholder.svg?height=40&width=40" alt="Caseirinhos da Amália" width={40} height={40} />
+            <Image src="/placeholder.svg?height=40&width=40" alt="Logo da Caseirinhos da Amália" width={40} height={40} />
             <span className="text-xl font-semibold text-purple-800">Caseirinhos da Amália</span>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -662,7 +662,7 @@ export default function CustomizePage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-2">
-                <Image src="/placeholder.svg?height=40&width=40" alt="Caseirinhos da Amália" width={40} height={40} />
+                <Image src="/placeholder.svg?height=40&width=40" alt="Logo da Caseirinhos da Amália" width={40} height={40} />
                 <span className="text-xl font-semibold text-purple-800">Caseirinhos da Amália</span>
               </Link>
               <p className="text-sm text-gray-500">
