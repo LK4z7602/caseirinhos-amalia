@@ -1,16 +1,33 @@
-import type { Metadata } from 'next'
-import { Analytics } from "@vercel/analytics/next"
-import './globals.css'
+import type { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/next";
+import './globals.css';
+
+// Importe as imagens do seu favicon
+// Certifique-se de que os arquivos estão na pasta `public`
+// Exemplo: /public/favicon.ico, /public/apple-icon.png, etc.
+import faviconIco from '/public/favicon.ico';
+import appleIcon from '/public/apple-touch-icon.png';
+import androidIcon from '/public/android-chrome-192x192.png';
 
 export const metadata: Metadata = {
   title: 'Caseirinhos da Amália',
   description: 'Da minha casa para a sua casa!',
   generator: 'v0.dev',
-
+  
   verification: {
     google: 'FL5TWL-hbBPVxqHINwVQFnmWu_cUrRmw0LM8tXcxibs',
   },
-}
+
+  // Use o campo 'icons' para adicionar os ícones
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' }, // Favicon padrão
+      { url: '/android-chrome-192x192.png', sizes: '192x192' }, // Ícone Android
+    ],
+    shortcut: '/favicon.ico', // Ícone de atalho
+    apple: '/apple-touch-icon.png', // Ícone para iOS
+  },
+};
 
 export default function RootLayout({
   children,
@@ -20,9 +37,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.png" />
+        {/*
+          As tags <link> para os ícones serão geradas
+          automaticamente a partir do objeto 'metadata'
+        */}
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
-  )
+  );
 }
