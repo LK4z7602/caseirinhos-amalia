@@ -5,7 +5,11 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Caseirinhos da Amália',
   description: 'Da minha casa para a sua casa!',
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+
+  verification: {
+    google: 'FL5TWL-hbBPVxqHINwVQFnmWu_cUrRmw0LM8tXcxibs',
+  },
 }
 
 export default function RootLayout({
