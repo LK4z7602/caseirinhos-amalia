@@ -2,6 +2,9 @@
 
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Opcional, mas recomendado
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://caseirinhosdaamalia.vercel.app';
 
